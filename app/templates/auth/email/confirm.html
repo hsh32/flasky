@@ -1,0 +1,9 @@
+<p>亲爱的 {{ user.username }}</p>
+<p>欢迎使用<b>简博客</b>!</p>
+<p>为了确认您的账号,请<a href="{{ url_for('auth.confirm', token=token, _external=True) }}">点击此处</a></p>
+<p>当然,您也可以复制下方的链接到您的浏览器地址栏:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>此致,</p>
+&nbsp;&nbsp;&nbsp;&nbsp;<p>敬礼!</p>
+<p>简博客团队</p>
+<p><small>注:回复该邮件将不会得到回复!</small></p>

@@ -1,0 +1,8 @@
+亲爱的 {{ user.username }}
+欢迎使用简博客!
+为了确认您的账号,请点击下方的链接:
+{{ url_for('auth.confirm', token=token, _external=True) }}
+此致,
+    敬礼!
+简博客团队
+注:回复该邮件将不会得到回应!

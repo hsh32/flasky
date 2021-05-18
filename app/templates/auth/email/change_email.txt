@@ -1,0 +1,7 @@
+亲爱的 {{ user.username }}
+为了确认您账号的新邮箱地址,请点击下方的链接:
+{{ url_for('auth.change_email', token=token, _external=True) }}
+此致,
+    敬礼!
+简博客团队
+注:回复该邮件将不会得到回应!
